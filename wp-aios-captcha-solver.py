@@ -66,8 +66,8 @@ def solve_equation(equation):
         numbers = convert_strings_to_ints(equation.split('+'))
         return numbers[0] + numbers[1]
 
-    if ':' in equation or '/' in equation: # untestet
-        numbers = convert_strings_to_ints(equation.split('+'))
+    if ':' in equation: # untestet
+        numbers = convert_strings_to_ints(equation.split(':'))
         return numbers[0] / numbers[1]
     if '×' in equation:
         numbers = convert_strings_to_ints(equation.split('×'))
